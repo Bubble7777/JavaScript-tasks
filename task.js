@@ -266,4 +266,41 @@ else{
   alert('net');
 }
 //
-let num 
+let i = 0;
+while(i < 100){
+  i++;
+  alert(i);
+}
+for(let i = 1;i < 101;i++){
+  alert(i);
+}
+//
+let i = 10;
+while(i < 33){
+  i++;
+  console.log(i);
+}
+for(let i = 11; i < 34;i++){
+  console.log(i);
+}
+//
+let i = 0;
+while(i < 101){
+  if( i % 2 == 0){
+    console.log(i);
+  }
+  i++;
+}
+for(let i = 0;i < 101; i++){
+  if(i % 2 == 0){
+    console.log(i);
+  }
+}
+//
+var x = 0;
+var i = 1;                
+while (i <= 100) {         
+  x += i;            
+  i++;                    
+}         
+console.log(x);
