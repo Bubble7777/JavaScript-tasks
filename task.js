@@ -304,3 +304,99 @@ while (i <= 100) {
   i++;                    
 }         
 console.log(x);
+
+for(let x = 1, i = 1;i <= 100; i++, x+=i){
+  console.log(x);
+}
+//
+let arr = [1,2,3,4,5];
+for(let i = 0; i < arr.length; i++){
+  console.log(arr[i])
+}
+//
+let arr = [1,2,3,4,5];
+let result = 0;
+for(let i = 0; i < arr.length; i++){
+  result+=arr[i];
+}
+//
+let obj = {green:'зеленый', red:'красный', blue:'голубой'};
+for(let key in obj){
+  console.log(key);
+  console.log(obj[key]);
+}
+//
+let obj = {'Коля':200, 'Вася':300, 'Петя':400};
+for(let key in obj){
+  console.log(key + '-зарплата ' + obj[key] + ' долларов');
+}
+//
+let arr = [2,5,9,15,0,4];
+for(let i = 0; i < arr.length; i++){
+  if(arr[i] > 3 && arr[i] < 10){
+    console.log(arr[i]);
+  }
+}
+//
+let arr = [2,-3,5,-25,15,14,12];
+let sum = 0;
+for(let i = 0;i < arr.length; i++){
+  if(arr[i] > 0){
+    sum+=arr[i];
+  }
+}
+console.log(sum);
+//
+let arr = [1,2,5,9,4,13,4,10];
+for(let i = 0; i < arr.length; i++){
+  if(arr[i] == 4){
+    console.log('yes');
+    break;
+  }
+}
+//
+let arr = [10,20,30,50,235,3000];
+for(let i = 0;i < arr.length;i++){
+  if(arr[i][0] == 1 || arr[i][0] == 2 || arr[i][0] == 5){
+    console.log(arr[i]);
+  }
+}
+//
+let arr = [1,2,3,4,5,6,7,8,9];
+for(let i = 0; i < arr.length;i++){
+  console.log('-' + arr[i]);
+}
+//
+let arr = ['Mo', 'Di', 'Do', 'Mi', 'Fr', 'Sa', 'Sn'];
+for(let i = 0; i < arr.length;i++){
+    if(arr[i] == 'Sa' || arr[i] == 'Sn'){
+    document.write('<strong>' + arr[i] + '< /strong>' + '<br>' );
+    }
+    else{
+      document.write(arr[i] + '<br>');
+    }
+}
+//
+let day = 'Do';
+let arr = ['Mo', 'Di', 'Do', 'Mi', 'Fr', 'Sa', 'Sn'];
+for(let i = 0;i < arr.length; i++){
+  if(arr[i] == day){
+    document.write('<i>'+ arr[i] + '</i>' + '<br>');
+  }
+  else{
+    document.write(arr[i] + '<br>');
+  }
+}
+//
+
+for(let n = 1000, num = 0; n > 50; num++){
+  n/= 2;
+  }
+  alert("result of computed variable n:" + n);
+  alert("number of itaration:" + num);
+
+for (var n = 1000, num = 0; n > 50; num++) {
+  n /= 2;
+  }
+  alert("result of computed variable n: " + n);
+  alert("number of itaration: " + num);   
