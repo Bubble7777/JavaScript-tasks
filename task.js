@@ -400,3 +400,72 @@ for (var n = 1000, num = 0; n > 50; num++) {
   }
   alert("result of computed variable n: " + n);
   alert("number of itaration: " + num);   
+  //
+  let num = 2;
+  let pow = 10;
+  let st = Math.pow(num, pow);
+  console.log(st);
+  //
+  let num = 245;
+  console.log(Math.sqrt(num));
+  // 
+var arr = [4, 2, 5, 19, 13, 0, 10];
+var summ = 0;
+
+for(var i = 0; i < arr.length; i++){
+var cub = Math.pow(arr[i],3);
+summ = summ + cub;
+}
+ console.log(Math.sqrt(summ));
+ //
+let cub = Math.sqrt(379);
+console.log(Math.round(cub)); // округлил до целых
+console.log(cub.toFixed(1));  // округлил до десяток
+console.log(cub.toFixed(2)); // округлил до сотых
+//
+let cub = Math.sqrt(587);
+let obj = {'floor': Math.floor(cub), 'ceil': Math.ceil(cub)};
+console.log(cub);
+console.log(obj);
+//
+let arr = [4,-2,5,19,-130,0,10];
+let min = Math.min.apply(null, arr);
+let max = Math.max.apply(null, arr);
+alert(min);
+alert(max);
+//
+document.write(Math.random() * (100 - 1 +1) + 1);
+//
+var arr = [];
+for(var i = 0; i < 10; i++){
+  arr[i]= Math.round(Math.random()*(100 - 1 + 1) +1);
+}
+console.log(arr);
+//
+let a = 3;
+let b = 5;
+let c = a - b;
+console.log(Math.abs(c));
+//
+let arr = [12, 15, 20, 25, 59, 79]; // нахождение средней числа
+let sum = 0;
+let lent = arr.length;
+for(var i = 0; i < arr.length;i++){
+  sum+=arr[i]
+}
+let result = sum / lent;
+console.log(result);
+//
+var num;
+if(num === undefined){
+  num = num * (num - 1);
+}
+console.log(num(5));
+//
+var a = 3;
+var factorial = 1;
+for(var i = 2; i <= a; i++){
+  factorial *= i;
+  }
+  alert(factorial);
+//
